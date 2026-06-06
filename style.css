@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+header{
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    margin-bottom: 10px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: #ffd700;
+}
+
+section{
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#home{
+    text-align: center;
+}
+
+#home img{
+    width: 80%;
+    max-width: 700px;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+h2{
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+ul{
+    margin-left: 20px;
+}
+
+footer{
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+.facility-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.facility-box{
+    background-color: #e6f0ff;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.facility-box h3{
+    color: #003366;
+    margin-bottom: 10px;
+}
+.placement-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.placement-box{
+    width: 280px;
+    padding: 20px;
+    background: #f0f8ff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.placement-box h3{
+    color: #003366;
+    margin-bottom: 10px;
+}
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery-container img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.gallery-container img:hover{
+    transform: scale(1.05);
+}
+.contact-form{
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button{
+    padding: 12px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover{
+    background-color: #0055aa;
+}
+.hero{
+    background: linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hero h2{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero p{
+    font-size: 20px;
+}
+/* Smooth Scrolling */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Section Animation */
+section{
+    transition: transform 0.3s ease;
+}
+
+section:hover{
+    transform: translateY(-5px);
+}
+
+/* Card Hover Effects */
+.facility-box,
+.placement-box{
+    transition: all 0.3s ease;
+}
+
+.facility-box:hover,
+.placement-box:hover{
+    transform: scale(1.05);
+}
+
+/* Navigation Hover */
+nav a{
+    transition: 0.3s;
+}
+
+nav a:hover{
+    background-color: rgba(255,255,255,0.2);
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* Button Hover */
+.contact-form button{
+    transition: 0.3s;
+}
+
+.contact-form button:hover{
+    transform: scale(1.05);
+}
