@@ -1,1 +1,1 @@
-# ALITS-COLLEGE
+# ALITS-College
